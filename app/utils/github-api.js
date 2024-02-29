@@ -4,11 +4,17 @@ const BASE_URL = 'https://api.github.com';
 
 export {getRepos, getUserData};
 
+/**
+ * This function gets the repositories for the given username.
+ */
 function getRepos(username) {
   const url = `${BASE_URL}/users/${username}/repos?per_page=250`;
   return axios.get(url).then(response => response.data);
 }
 
+/**
+ * This function gets account data associated with the given username.
+ */
 function getUserData(username) {
   return axios.all([
     axios.get(`${BASE_URL}/users/${username}`),

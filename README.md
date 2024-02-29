@@ -1,3 +1,6 @@
+#
+This is an example repo, populated with pull requests and other things to illustrate how Coda can work for engineers.
+
 # react-example
 
 React example app that demonstrates using [React] with [webpack], and [babeljs], as well as project structure.

@@ -12,6 +12,10 @@ describe('RepoFilter', () => {
     input.simulate('keyup', {target: {value: key}});
     expect(onUpdate).to.have.been.calledWith(key);
   });
+
+  it('should do the thing', () => {});
+
+  it('should do the other cool thing', () => {});
 });
 
 function mountComponent(props) {
